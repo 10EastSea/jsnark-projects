@@ -40,7 +40,7 @@ public class MerkleTreePathGadget extends Gadget {
 	}
 
 	private void buildCircuit() {
-		directionSelectorBits = directionSelectorWire.getBitWires(2).asArray(); // 3 -> binary: 11 -> 2 bits => array size: 2
+		directionSelectorBits = directionSelectorWire.getBitWires(treeHeight).asArray(); // 3 -> binary: 11 -> 2 bits => array size: 2
 		// directionSelectorBits = directionSelectorWire.getBitWires(treeHeight).asArray(); // test code
 
 		// Apply CRH to leaf data
